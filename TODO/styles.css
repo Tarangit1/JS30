@@ -1,0 +1,124 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+                 Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.Todo{
+
+    width: 100%;
+    max-width: 540px;
+    min-height: 340px;
+    background: white;
+    margin: 100px auto 20px;
+    padding: 10px 30px 70px;
+    
+    border-radius: 10px;
+
+}
+
+.Todo h2{
+    
+    text-align: center;
+    
+    margin-bottom: 40px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    background: #e4e0e073;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding-left: 20px;
+    
+    
+
+
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background:none;
+    padding: 10px;
+    font-weight: 14px;
+
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    border-radius: 40px;
+    background: #fd6666 ;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+ul{
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    background-color: #e4e0e073;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    transition: background 0.2s;
+}
+
+ul li::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-image: url(To-Do-Img/images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    left: 8px;
+    top: 12px;
+  
+   
+}
+ul li.checked {
+    text-decoration: line-through;
+    color: #999;
+}
+ul li.checked::before {
+    background-image: url(To-Do-Img/images/checked.png);
+    
+}
+
+ul li span {
+    position: absolute;
+    right: 10px; /* Moves it to the far right */
+    top: 50%;
+    transform: translateY(-50%); /* Centers it vertically */
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    color: #555;
+    text-decoration: none !important; /* Forces the line-through to stay away */
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0; 
+    cursor: pointer;
+}
+
+/* Optional: Make the bin turn red on hover */
+ul li span:hover {
+    background: #eee;
+    border-radius: 50%;
+}
+
+ul li:hover {
+    background: #f9f9f9; /* Highlights the row you are on */
+}
