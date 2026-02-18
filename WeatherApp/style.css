@@ -1,0 +1,113 @@
+body {
+    background-color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.weather-container {
+    margin: 100px auto;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #66aaea, #5c4fe9);
+    width: 320px;                    /* Responsive width */
+    max-width: 400px;              /* Don't exceed 400px */
+    max-height: fit-content;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;                     /* Space between children */
+    box-sizing: border-box;        /* Include padding in width */
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#input-city {
+    flex: 1;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    min-width: 0;
+}
+
+#search-btn {
+    border: none;
+    background: white;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.weather-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.temp {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.city {
+    font-size: 20px;
+    margin:  0;
+}
+
+.detail {
+
+    display: flex;
+    margin-top: 40px;
+    
+    gap: 20px;
+}
+
+.col {
+    display: flex;
+    flex: 1;
+    flex-direction:row;
+    justify-content: center;
+    align-items:center;
+    text-align:justify;
+}
+
+.col-icon {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    padding-top: 5px;
+    
+}
+
+.humidity,
+.wind {
+    font-size:20px;
+    width: 50px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+}
+.detail p{
+    margin:0px;
+}
+
+

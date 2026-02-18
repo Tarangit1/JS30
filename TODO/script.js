@@ -1,4 +1,4 @@
-const inputBox = document.getElementById("input_box");
+const inputBox = document.getElementById("input-box");
 const inputbtn = document.getElementById("input_btn");
 const listContainer = document.getElementById("list-container");
 inputBox.addEventListener('keypress',function(e){
